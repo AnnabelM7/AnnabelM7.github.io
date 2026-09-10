@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header .header-banner {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+header .logo h1 {
+    font-size: 48px;
+    color: #333333;
+    letter-spacing: 2px;
+}
+
+header .logo h2 {
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: #555555;
+    margin-top: 8px;
+}
+
+header nav {
+    margin-top: 30px;
+}
+
+header nav ul {
+    display: inline-flex;
+    gap: 40px;
+}
+
+header nav ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #333333;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .banner-image {
+    width: 100%;
+    margin-top: 30px;
+}
+
+header .banner-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+.header-line {
+    width: 60%;
+    max-width: 200px;
+    border: none;
+    border-top: 1px solid #333333;
+    margin: 16px auto 0 auto;
+}
+
+@media only screen and (min-width: 950px) {
+    .header-line {
+        display: none;
+    }
+}
+
+.about-text p {
+    margin-bottom: 16px;
+}
+
+.about-section,
+.f h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    padding: 20px;
+}
+
+.about-image {
+    display: none;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 950px) {
+    .about-section {
+        padding: 40px;
+    }
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+    .about-image {
+        display: block;
+        flex: 1;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        display: block;
+        border-radius: 8px;
+    }
+}
+
+.recipes-heading {
+    margin-bottom: 20px;
+}
+
+.recepies-section {
+    padding: 20px;
+}
+
+@media only screen and (min-width: 950px) {
+    .recipes-heading {
+        display: none;
+    }
+}
+
+.recipe-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.recipe-item {
+    text-decoration: none;
+}
+
+.recipe-circle {
+    position: relative;
+    width: min(85vw, 500px);
+    height: min(85vw, 500px);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.recipe-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.country-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.recipe-item:hover .country-label {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 950px) {
+    .recipe-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    background-color: #e0e0e0;
+    margin-top: 20px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    gap: 12px;
+}
+
+.footer-social img {
+    width: 100%;
+}
